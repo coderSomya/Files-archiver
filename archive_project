@@ -35,7 +35,7 @@ do
    
    if[ $RUN -eq 0]
    then 
-       echo "[ $(date "+%Y-%m-%d %H:%M:%S")] archiving $i ==>$BASE/archi             ve"
+       echo "[ $(date "+%Y-%m-%d %H:%M:%S")] archiving $i ==>$BASE/archive"
        gzip $i || exit 1
        mv $i.gz $BASE/archive || exit 1
 
